@@ -11,12 +11,11 @@ diff -Nur liblzf-0.4.orig/Makefile.am liblzf-0.4/Makefile.am
 +
 +lzf_SOURCES = lzf.c
 +lzf_LDADD = liblzf.la
-diff -Nur liblzf-0.4.orig/configure.in liblzf-0.4/configure.in
---- liblzf-0.4.orig/configure.in	Mon Jan  1 02:53:28 2001
-+++ liblzf-0.4/configure.in	Sat Jul 27 10:45:27 2002
+--- liblzf-1.2.orig/configure.in	Mon Jan  1 02:53:28 2001
++++ liblzf-1.2/configure.in	Sat Jul 27 10:45:27 2002
 @@ -1,9 +1,10 @@
  AC_INIT(lzfP.h)
-+AM_INIT_AUTOMAKE(liblzf, 0.4)
++AM_INIT_AUTOMAKE(liblzf, 1.2)
  
 -AC_CONFIG_HEADER(config.h)
 +AM_CONFIG_HEADER(config.h)
@@ -32,7 +31,7 @@ diff -Nur liblzf-0.4.orig/configure.in liblzf-0.4/configure.in
  AC_C_CONST
  
 -if test "$GCC" = yes; then
--   CFLAGS="$CFLAGS -O2 -funroll-all-loops"
+-   CFLAGS="$CFLAGS -O3 -funroll-all-loops"
 -else
 -   AC_MSG_RESULT(no gcc)
 -fi
