@@ -7,6 +7,7 @@ License:	BSD-like
 Group:		Libraries
 Vendor:		Marc Lehmann <pcg@goof.com>
 Source0:	http://www.goof.com/pcg/marc/data/%{name}-%{version}.tar.gz
+# Source0-md5:	14abfdfb7b80d273ca7a9a2a26221d35
 Patch0:		%{name}-shared.patch
 URL:		http://www.goof.com/pcg/marc/liblzf.htm
 BuildRequires:	autoconf
