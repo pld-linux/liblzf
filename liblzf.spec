@@ -1,8 +1,8 @@
 Summary:	LZF compression library
 Summary(pl):	Biblioteka kompresji LZF
 Name:		liblzf
-Version:	0.4
-Release:	2
+Version:	1.0
+Release:	1
 License:	BSD-like
 Group:		Libraries
 Vendor:		Marc Lehmann <pcg@goof.com>
