@@ -63,8 +63,8 @@ Statyczna wersja biblioteki liblzf.
 %build
 mv -f config.h.in acconfig.h
 %{__libtoolize}
-aclocal
-autoheader
+%{__aclocal}
+%{__autoheader}
 %{__autoconf}
 %{__automake}
 %configure
