@@ -2,7 +2,7 @@ Summary:	LZF compression library
 Summary(pl):	Biblioteka kompresji LZF
 Name:		liblzf
 Version:	0.4
-Release:	1
+Release:	2
 License:	BSD-like
 Group:		Libraries
 Vendor:		Marc Lehmann <pcg@goof.com>
@@ -80,7 +80,7 @@ rm -rf $RPM_BUILD_ROOT
 rm -rf $RPM_BUILD_ROOT
 
 %post	-p /sbin/ldconfig
-%postun	-p /sbon/ldconfig
+%postun	-p /sbin/ldconfig
 
 %files
 %defattr(644,root,root,755)
