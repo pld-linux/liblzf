@@ -11,11 +11,11 @@ diff -Nur liblzf-0.4.orig/Makefile.am liblzf-0.4/Makefile.am
 +
 +lzf_SOURCES = lzf.c
 +lzf_LDADD = liblzf.la
---- liblzf-1.2.orig/configure.in	Mon Jan  1 02:53:28 2001
-+++ liblzf-1.2/configure.in	Sat Jul 27 10:45:27 2002
+--- liblzf-1.5.orig/configure.ac	Mon Jan  1 02:53:28 2001
++++ liblzf-1.5/configure.ac	Sat Jul 27 10:45:27 2002
 @@ -1,9 +1,10 @@
- AC_INIT(lzfP.h)
-+AM_INIT_AUTOMAKE(liblzf, 1.2)
+ AC_CONFIG_SRCDIR([lzfP.h])
++AM_INIT_AUTOMAKE(liblzf, 1.5)
  
 -AC_CONFIG_HEADER(config.h)
 +AM_CONFIG_HEADER(config.h)
@@ -36,4 +36,4 @@ diff -Nur liblzf-0.4.orig/Makefile.am liblzf-0.4/Makefile.am
 -   AC_MSG_RESULT(no gcc)
 -fi
 -
- AC_OUTPUT(Makefile)
+ AC_CONFIG_FILES([Makefile])
