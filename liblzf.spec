@@ -1,13 +1,13 @@
 Summary:	LZF compression library
 Summary(pl):	Biblioteka kompresji LZF
 Name:		liblzf
-Version:	1.2
+Version:	1.3
 Release:	1
-License:	BSD-like
+License:	BSD-like (or GPLv2 for core - see LICENSE)
 Group:		Libraries
 Vendor:		Marc Lehmann <pcg@goof.com>
 Source0:	http://www.goof.com/pcg/marc/data/%{name}-%{version}.tar.gz
-# Source0-md5:	426d945a3fda2bc3c25f542b546b723a
+# Source0-md5:	aaf6338cb952dfa65375fb89078a2c8f
 Patch0:		%{name}-shared.patch
 URL:		http://www.goof.com/pcg/marc/liblzf.html
 BuildRequires:	autoconf
@@ -37,7 +37,7 @@ Wed³ug aktualnego stanu wiedzy algorytm jest wolny od patentów.
 Summary:	Header files for liblzf
 Summary(pl):	Pliki nag³ówkowe liblzf
 Group:		Development/Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description devel
 Header files for libzlf.
@@ -49,7 +49,7 @@ Pliki nag³ówkowe liblzf.
 Summary:	Static liblzf library
 Summary(pl):	Statyczna biblioteka liblzf
 Group:		Development/Libraries
-Requires:	%{name}-devel = %{version}
+Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static version of liblzf library.
