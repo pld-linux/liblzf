@@ -1,15 +1,15 @@
 Summary:	LZF compression library
 Summary(pl):	Biblioteka kompresji LZF
 Name:		liblzf
-Version:	1.0
+Version:	1.2
 Release:	1
 License:	BSD-like
 Group:		Libraries
 Vendor:		Marc Lehmann <pcg@goof.com>
 Source0:	http://www.goof.com/pcg/marc/data/%{name}-%{version}.tar.gz
-# Source0-md5:	14abfdfb7b80d273ca7a9a2a26221d35
+# Source0-md5:	426d945a3fda2bc3c25f542b546b723a
 Patch0:		%{name}-shared.patch
-URL:		http://www.goof.com/pcg/marc/liblzf.htm
+URL:		http://www.goof.com/pcg/marc/liblzf.html
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libtool
@@ -75,7 +75,8 @@ mv -f config.h.in acconfig.h
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -91,8 +92,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %files devel
 %defattr(644,root,root,755)
-%{_libdir}/lib*.la
 %attr(755,root,root) %{_libdir}/lib*.so
+%{_libdir}/lib*.la
 %{_includedir}/*.h
 
 %files static
