@@ -1,13 +1,13 @@
 Summary:	LZF compression library
 Summary(pl):	Biblioteka kompresji LZF
 Name:		liblzf
-Version:	1.5
+Version:	1.51
 Release:	1
 License:	BSD-like (or GPLv2 for core - see LICENSE)
 Group:		Libraries
 Vendor:		Marc Lehmann <pcg@goof.com>
 Source0:	http://www.goof.com/pcg/marc/data/%{name}-%{version}.tar.gz
-# Source0-md5:	924da45ce84af45126fd9d9d451dcfb9
+# Source0-md5:	e39f3f8ecbdf77896c1819e6559439e3
 Patch0:		%{name}-shared.patch
 URL:		http://www.goof.com/pcg/marc/liblzf.html
 BuildRequires:	autoconf
