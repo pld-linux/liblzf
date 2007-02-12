@@ -1,5 +1,5 @@
 Summary:	LZF compression library
-Summary(pl):	Biblioteka kompresji LZF
+Summary(pl.UTF-8):   Biblioteka kompresji LZF
 Name:		liblzf
 Version:	1.7
 Release:	1
@@ -24,37 +24,37 @@ repetitive data as well. The library is self-contained and very small
 be no problems incoporating this library into commercial programs. It
 is believed that it is free from any patents.
 
-%description -l pl
-LZF jest ekstremalnie szybkim (nie tak du¿o wolniejszym od memcpy)
-algorytmem kompresji. Jest idealny dla programów, które chc±
-zaoszczêdziæ *trochê* miejsca, ale nie kosztem szybko¶ci. Jest idealny
-dla powtarzaj±cych siê danych. Biblioteka jest ma³a i nie wymaga
-¿adnej dodatkowej du¿ej biblioteki. Jest wolnodostêpna, wiêc nie
-powinno byæ problemów z wykorzystaniem go w komercyjnych programach.
-Wed³ug aktualnego stanu wiedzy algorytm jest wolny od patentów.
+%description -l pl.UTF-8
+LZF jest ekstremalnie szybkim (nie tak duÅ¼o wolniejszym od memcpy)
+algorytmem kompresji. Jest idealny dla programÃ³w, ktÃ³re chcÄ…
+zaoszczÄ™dziÄ‡ *trochÄ™* miejsca, ale nie kosztem szybkoÅ›ci. Jest idealny
+dla powtarzajÄ…cych siÄ™ danych. Biblioteka jest maÅ‚a i nie wymaga
+Å¼adnej dodatkowej duÅ¼ej biblioteki. Jest wolnodostÄ™pna, wiÄ™c nie
+powinno byÄ‡ problemÃ³w z wykorzystaniem go w komercyjnych programach.
+WedÅ‚ug aktualnego stanu wiedzy algorytm jest wolny od patentÃ³w.
 
 %package devel
 Summary:	Header files for liblzf
-Summary(pl):	Pliki nag³ówkowe liblzf
+Summary(pl.UTF-8):   Pliki nagÅ‚Ã³wkowe liblzf
 Group:		Development/Libraries
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 
 %description devel
 Header files for libzlf.
 
-%description devel -l pl
-Pliki nag³ówkowe liblzf.
+%description devel -l pl.UTF-8
+Pliki nagÅ‚Ã³wkowe liblzf.
 
 %package static
 Summary:	Static liblzf library
-Summary(pl):	Statyczna biblioteka liblzf
+Summary(pl.UTF-8):   Statyczna biblioteka liblzf
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{epoch}:%{version}-%{release}
 
 %description static
 Static version of liblzf library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Statyczna wersja biblioteki liblzf.
 
 %prep
