@@ -1,5 +1,5 @@
 Summary:	LZF compression library
-Summary(pl.UTF-8):   Biblioteka kompresji LZF
+Summary(pl.UTF-8):	Biblioteka kompresji LZF
 Name:		liblzf
 Version:	1.7
 Release:	1
@@ -35,7 +35,7 @@ Według aktualnego stanu wiedzy algorytm jest wolny od patentów.
 
 %package devel
 Summary:	Header files for liblzf
-Summary(pl.UTF-8):   Pliki nagłówkowe liblzf
+Summary(pl.UTF-8):	Pliki nagłówkowe liblzf
 Group:		Development/Libraries
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 
@@ -47,7 +47,7 @@ Pliki nagłówkowe liblzf.
 
 %package static
 Summary:	Static liblzf library
-Summary(pl.UTF-8):   Statyczna biblioteka liblzf
+Summary(pl.UTF-8):	Statyczna biblioteka liblzf
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{epoch}:%{version}-%{release}
 
