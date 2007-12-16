@@ -1,13 +1,13 @@
 Summary:	LZF compression library
 Summary(pl.UTF-8):	Biblioteka kompresji LZF
 Name:		liblzf
-Version:	2.0
+Version:	3.1
 Release:	1
 Epoch:		1
-License:	BSD-like (or GPLv2 for core - see LICENSE)
+License:	BSD-like (or GPL v2 for core - see LICENSE)
 Group:		Libraries
 Source0:	http://www.goof.com/pcg/marc/data/%{name}-%{version}.tar.gz
-# Source0-md5:	59efd98ff304c6daebf19d29e6f77ff5
+# Source0-md5:	57bde55f748e47b731cfe9ad0e52a907
 Patch0:		%{name}-shared.patch
 URL:		http://www.goof.com/pcg/marc/liblzf.html
 BuildRequires:	autoconf >= 2.50
@@ -88,14 +88,15 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Changes LICENSE README
 %attr(755,root,root) %{_bindir}/*
-%attr(755,root,root) %{_libdir}/lib*.so.*.*
+%attr(755,root,root) %{_libdir}/liblzf.so.*.*.*
+%attr(755,root,root) %ghost %{_libdir}/liblzf.so.0
 
 %files devel
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/lib*.so
-%{_libdir}/lib*.la
-%{_includedir}/*.h
+%attr(755,root,root) %{_libdir}/liblzf.so
+%{_libdir}/liblzf.la
+%{_includedir}/lzf.h
 
 %files static
 %defattr(644,root,root,755)
-%{_libdir}/lib*.a
+%{_libdir}/liblzf.a
