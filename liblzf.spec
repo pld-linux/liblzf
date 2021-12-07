@@ -1,15 +1,15 @@
 Summary:	LZF compression library
 Summary(pl.UTF-8):	Biblioteka kompresji LZF
 Name:		liblzf
-Version:	3.2
+Version:	3.6
 Release:	1
 Epoch:		1
 License:	BSD-like (or GPL v2 for core - see LICENSE)
 Group:		Libraries
-Source0:	http://www.goof.com/pcg/marc/data/%{name}-%{version}.tar.gz
-# Source0-md5:	1044a4783a2b15d6002471fd35be2685
+Source0:	http://dist.schmorp.de/liblzf/%{name}-%{version}.tar.gz
+# Source0-md5:	b8d23b8258d785707a61fc3dd159c04e
 Patch0:		%{name}-shared.patch
-URL:		http://www.goof.com/pcg/marc/liblzf.html
+URL:		http://software.schmorp.de/pkg/liblzf.html
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
 BuildRequires:	libtool
@@ -62,7 +62,6 @@ Statyczna wersja biblioteki liblzf.
 %patch0 -p1
 
 %build
-mv -f config.h.in acconfig.h
 %{__libtoolize}
 %{__aclocal}
 %{__autoheader}
